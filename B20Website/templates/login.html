@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>login</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='./login.css') }}">
+</head>
+
+<body>
+
+<!--the below form is used to load the username and password and see if the person is a user-->
+
+<form action="/loginme" method="POST">
+  <div class="imgcontainer">
+    <h1>Welcome Back</h1>
+  </div>
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+   
+    <p>Don't have an account?
+     <a class="active" href="signup">Signup</a>
+    </p>
+  </div>
+  
+</form> 
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+</body>
+</html>

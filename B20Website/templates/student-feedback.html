@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Remark Request</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/student-feedback.css">
+
+</head>
+
+    <div class="header">
+      <a href="" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="">Home</a>
+
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+      <a class="active" href="/">My Account</a>
+          <a href="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>Anonymous Feedback</h1>
+      </div>
+    </div>
+
+
+    <!-- below is the form used to collect information for instructor feedback-->
+    <h2>Please fill in the required fields</h2>
+  <h3> Answer the following questions in their respective textboxes.</h3>
+  <h3>*note that all responses are anonymous<h3>
+
+    <form class = "info_box" action="/send-student-feedback" method="POST">
+    <div class="container">
+      <div class="course-div">
+        <label for="course"><b>Course</b></label>
+        <br>
+        <input class = "sf1" type="text" placeholder="Enter Course" name="course" required>
+        <br>
+        </div>
+
+
+        <div class = “instructor_names”>
+            <h3> Choose an Instructor</h3>
+	        <div class=“selection_options”>
+
+		        <select name='option_1' id = “option_1”>
+			    <option>Choose an option</option>
+
+
+                {% for item in instructors%}
+			    <option value = "{{ item['name'] }}">{{ item['name']}}</option> <!-- i need to pass instructors into the template and then call instructor names only-->
+                {% endfor %}
+
+		        </select>
+
+
+	        </div>
+        </div>
+
+
+
+
+    <div class="q1-div>">
+        <label for="q1"><b>What do you like about the instructor teaching?</b></label>
+        <br>
+        <input class = "sf3" type="text" placeholder="Your response goes here" name="question 1" required>
+        <br>
+    </div>
+
+    <div class="q2-div">
+        <label for="q2"><b>What do you recommend the instructor to do to improve their teaching?</b></label>
+        <br>
+        <input class = "sf4" type="text" placeholder="Your response goes here" name="question 2" required>
+        <br>
+     </div>
+
+    <div class="q3-div>">
+        <label for="q3"><b>What do you like about the labs?</b></label>
+        <br>
+        <input class = "sf5" type="text" placeholder="Your response goes here" name="question 3" required>
+        <br>
+     </div>
+
+
+     <div class="q4-div>">
+        <label for="q4"><b>What do you recommend the lab instructors to do to improve their lab teaching?</b></label>
+        <br>
+        <input class = "sf6" type="text" placeholder="Your response goes here" name="question 4" required>
+        <br>
+    </div>
+
+
+
+
+        <div class = add-feedback-btn></div>
+            <button type="submit" class="add_feedback_button">Submit Feedback</button>
+        </div>
+
+
+
+    </div>
+
+    </form>
+
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-grades</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/my-grades.css">
+
+</head>
+<body>
+
+    <div class="header">
+      <a href="" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="">Home</a>
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+        <a class="active" href="/">My Account</a>
+        <a href="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>My Grades</h1>
+      </div>
+    </div>
+
+
+    <!-- the below code is used to load information from the SQL table and display it on the page-->
+    <div class="in">
+
+        <div class="row">
+
+            <div class="column">
+                <h3>Student Id</h3>
+            </div>
+
+            <div class="column">
+                <h3>Name</h3>
+            </div>
+             <div class="column">
+                <h3>Course</h3>
+            </div>
+             <div class="column">
+                <h3>Instructor</h3>
+            </div>
+            <div class="column">
+                <h3>Assignment</h3>
+            </div>
+            <div class="column">
+                <h3>Mark</h3>
+            </div>
+
+
+        </div>
+        {% for item in student : %}
+        <div class="row">
+            <div class="column">
+                <h3>{{ item['studentid'] }}</h3>
+            </div>
+            <div class="column">
+               <h3>{{ item['studentname'] }}</h3>
+            </div>
+            <div class="column">
+                <h3>{{ item['course'] }}</h3>
+            </div>
+            <div class="column">
+                <h3>{{ item['instructor'] }}</h3>
+            </div>
+            <div class="column">
+                <h3>{{ item['assignment'] }}</h3>
+            </div>
+            <div class="column">
+                <h3>{{ item['mark'] }}</h3>
+            </div>
+        </div>
+        {% endfor %}
+
+     </div>
+
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+
+</body>
+</html>

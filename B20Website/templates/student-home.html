@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student-Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./instructorhome.css') }}">
+</head>
+<body>
+
+  <div class="content">
+    <div class="header">
+      <a href="homepage" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="homepage">Home</a>
+
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a  href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+      <a class="active" href="/">My Account</a>
+         <a href="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>Welcome</h1>
+      </div>
+    </div>
+
+    <!-- Below are buttons that the students can use to navigate through their account's information-->
+    <div class ="select">
+    <a href="student-feedback">Anonymous Feedback</a>
+
+
+   </div>
+
+    <div class ="select">
+    <a href="student-remark-requests">Remark Request</a>
+
+  </div>
+
+
+    <div class ="select">
+    <a href="my-grades">My Marks</a>
+
+  </div>
+
+  </div>
+
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remark-requests</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/remark-requests.css">
+
+</head>
+<body>
+
+    <div class="header">
+      <a href="" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="">Home</a>
+
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+      <a class="active" href="/">My Account</a>
+        <a href="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>Remark Requests</h1>
+      </div>
+    </div>
+
+    <div class="in">
+
+        <div class="row">
+
+            <div class="column">
+                <h3>Student ID</h3>
+            </div>
+
+            <div class="column">
+                <h3>User Id</h3>
+            </div>
+
+            <div class="column">
+                <h3>Student Name</h3>
+            </div>
+
+            <div class="column">
+                <h3>Course</h3>
+            </div>
+
+            <div class="column">
+                <h3>Instructor</h3>
+            </div>
+             <div class="column">
+                <h3>Mark</h3>
+            </div>
+             <div class="column">
+                <h3>Assignment</h3>
+            </div>
+            <div class="column">
+                <h3>Explaination</h3>
+            </div>
+
+
+        </div>
+        {% for item in student%}
+        <div class="row">
+            <div class="column">
+                {{ item['studentid']}}
+
+            </div>
+            <div class="column">
+                {{ item['userid']}}
+            </div>
+            <div class="column">
+                {{ item['studentname']}}
+            </div>
+            <div class="column">
+                {{ item['course']}}
+            </div>
+            <div class="column">
+                {{ item['instructor']}}
+            </div>
+            <div class="column">
+                {{ item['mark']}}
+            </div>
+            <div class="column">
+                {{ item['assignment']}}
+            </div>
+            <div class="column">
+                {{ item['explaination']}}
+            </div>
+        </div>
+        {% endfor %}
+
+     </div>
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+
+</body>
+</html>

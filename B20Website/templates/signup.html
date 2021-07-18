@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>signup</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='./signup.css') }}">
+</head>
+
+<body>
+  
+
+<form action="/signupInfo" method="POST">
+  <div class="imgcontainer">
+    <h1>Create a new account</h1>
+  </div>
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <p>Please check the box below if you are an instructor or uncheck if you are a student</p>
+ <input type="checkbox" name="isinstruct" value="Instructor" >
+  <label for="isinstruct">Instructor</label>
+    <button type="submit">Sign up</button>
+
+  </div>
+  
+</form> 
+
+</body>
+</html>

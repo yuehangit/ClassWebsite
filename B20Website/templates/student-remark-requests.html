@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Remark Request</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/student-remark-request.css">
+
+</head>
+
+
+    <div class="header">
+      <a href="" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="">Home</a>
+
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+      <a class="active" href="/">My Account</a>
+
+          <a href="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>Remark Requests</h1>
+      </div>
+    </div>
+
+  <h2>Fill out the required fields to ask for a remark</h2>
+
+
+    <!-- The form below can be used by the student to send a remark request to their instructor-->
+    <form class = "info_box" action="/send-remark-requests" method="POST">
+
+    <div class="container">
+      <div class="id-div">
+        <label for="student_id"><b>Student Id</b></label>
+        <br>
+        <input class = "s1" type="text" placeholder="Enter Student ID" name="student ID" required>
+        <br>
+        </div>
+
+    <div class="studentname-div">
+        <label for="studentname"><b>Name</b></label>
+        <br>
+        <input class = "s2" type="text" placeholder="Enter Student name" name="student name" required>
+        <br>
+     </div>
+
+    <div class="course-div>">
+        <label for="course"><b>Course</b></label>
+        <br>
+        <input class = "s3" type="text" placeholder="Enter Course Code" name="Course code" required>
+        <br>
+    </div>
+
+    <div class="instructor-div">
+        <label for="instructor"><b>Instructor</b></label>
+        <br>
+        <input class = "s4" type="text" placeholder="Enter Instructor Name" name="Instructor Name" required>
+        <br>
+     </div>
+
+    <div class="mark-div>">
+        <label for="mark"><b>Original Mark</b></label>
+        <br>
+        <input class = "s5" type="text" placeholder="Enter Student's Mark" name="student mark" required>
+        <br>
+     </div>
+
+
+     <div class="assignment-div>">
+        <label for="assignment"><b>Assignment</b></label>
+        <br>
+        <input class = "s6" type="text" placeholder="Enter assigment name" name="assignment type" required>
+        <br>
+    </div>
+
+     <div class="explaination-div>">
+        <label for="explaination"><b>Remark Reason</b></label>
+        <br>
+        <input class = "s7" type="text" placeholder="Enter a reason for why you want a remark" name="remark reason" required>
+        <br>
+     </div>
+
+
+        <div class = add_remark-request-div></div>
+            <button type="submit" class="remark_request_btn">Send Remark Request</button>
+        </div>
+    </div>
+
+    </form>
+
+    <div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+
+</body>
+</html>

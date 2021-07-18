@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./signupfail.css') }}">
+</head>
+<body>
+<!--Users see this page if their login information isn't correct-->
+
+      <div class = "textin">
+        <h3>Sorry the username or password you entered is incorrect click login to try again</h3>
+      </div>
+
+  <div class="click">
+    <button onclick="window.location.href = 'login';">Login</button>
+  </div>
+  <div class = "imgcontainer">
+  <div class="img">
+    </div>
+  </div>
+</body>
+</html>

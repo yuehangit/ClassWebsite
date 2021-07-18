@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Grades</title>
+    <link rel="stylesheet" href="/static/insert-grades.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"></head>
+<body>
+
+    <div class="header">
+      <a href="" class="logo">CSCB20</a>
+      <div class="header-right">
+        <a href="">Home</a>
+
+        <a href="calendar">Calendar</a>
+        <a href="lectures">Lectures</a>
+        <a href="assignments">Assignments</a>
+        <a href="labs">Labs</a>
+        <a href="tests">Tests</a>
+        <a href="team">Team</a>
+        <a href="resources">Resources</a>
+        <a class="active" href="/">My Account</a>
+         <a href="logout">Logout</a>
+
+      </div>
+    </div>
+
+    <div class="title">
+      <div class="title_in">
+        <h1>Add Grades</h1>
+      </div>
+    </div>
+    <!--Form used to collect information used to add student's grade-->
+    <form class = "info_box" action="/insert-the-grades" method="POST">
+    <div class="imgcontainer">
+         <h2>Enter the student's information in the form below</h2>
+    </div>
+
+    <div class="container">
+      <div class="id-div>"
+        <label for="student_id"><b>Student Id</b></label>
+        <br>
+        <input class = "i1" type="text" placeholder="Enter Student ID" name="student ID" required>
+        <br>
+      </div>
+
+     <div class = "instructor_name-div">
+        <label for="instructor_name"><b>Instructor Name</b></label>
+      <br>
+        <input class = "i2" type="text" placeholder="Enter Instructor Name" name="instructor name" required>
+        <br>
+    </div>
+
+     <div class="course_code-div">
+        <label for="course_code"><b>Course Code</b></label>
+        <br>
+        <input class = "i3" type="text" placeholder="Enter Course Code" name="course code" required>
+        <br>
+    </div>
+
+    <div class = "grade-div">
+        <label for="grade"><b>Grade</b></label>
+      <br>
+        <input class = "i4" type="text" placeholder="Enter Grade" name="Grade" required>
+        <br>
+    </div>
+
+  <div class = "assignment-div">
+        <label for="assessment_type"><b>Assignemnt</b></label>
+        <br>
+        <input class = "i5" type="text" placeholder="Enter Assessment Type" name="Assessment Type" required>
+        <br>
+  </div>
+
+  <div class = s_name-div>
+        <label for="s_name"><b>Student Name</b></label>
+        <br>
+        <input class = "i6" type="text" placeholder="Enter Student's Name" name="s_name" required>
+        <br>
+   </div>
+
+        <div class = add_grades-div></div>
+            <button type="submit" class="add_grades_button">Add Grade</button>
+        </div>
+
+    </div>
+
+    </form>
+
+<div class="footer">
+
+       <p> Website Designed By Sara and Yue <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">Faculty of Computer Science</a></p>
+
+    </div>
+
+</body>
+
+</html>
