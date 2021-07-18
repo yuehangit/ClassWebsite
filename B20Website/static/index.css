@@ -1,0 +1,145 @@
+
+.body {
+
+  padding-top: 0px;
+  text-align: center;
+  font-family: monaco, monospace;
+  background: white;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  overflow: hidden;
+ 
+  padding: 5px 5px;
+  border-radius: 4px;
+ margin-bottom: 20px;
+}
+
+.header a {
+  font-family: 'Varela Round', sans-serif;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: #7300ff;
+}
+
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.title {
+  overflow: hidden;
+  color: black;
+  padding: 10px 0px;
+ 
+ width:50%;
+ margin: auto;
+ text-align: center;
+  background-image: url(https://media.giphy.com/media/NQgC6SCAmipUY/giphy.gif);
+  border-radius: 10px;
+
+}
+
+.title_in {
+  width:50%;
+  margin:auto;
+  text-align: center;
+  background-color: rgba(255,255,255,0.35);
+  border-radius: 4px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.news{
+  flex:1;
+  text-align:center;
+  background:white;
+  border-radius: 28px;
+  border: 3px solid black;
+  flex-grow:1;
+  flex-basis: 0;
+  font-family: 'Varela Round', sans-serif;
+  padding: 5px 5px;
+  justify-content: space-around;
+}
+
+.stories{
+  text-align:center;
+  display:flex;
+  flex:wrap;
+  justify-content:space-evenly;
+  flex-direction: right;
+  padding:1%;
+
+
+}
+.welcome{
+  text-align: left;
+  background: #EDB5BF;
+  width:100%;
+  padding:1%;
+}
+
+.home_image{
+  
+  margin:auto;
+  width: 50%;
+
+  
+
+ 
+}
+.news1{
+  background:#99CED3;
+  border-radius: 28px;
+  border: 10px solid white;
+  padding: 10px 10px;
+  height: 200px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  flex-shrink: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.content {
+  flex: 1 0 auto;
+}

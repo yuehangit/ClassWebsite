@@ -1,0 +1,158 @@
+.header {
+  overflow: hidden;
+ 
+  padding: 5px 5px;
+  border-radius: 4px;
+ margin-bottom: 20px;
+}
+
+.header a {
+  font-family: 'Varela Round', sans-serif;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: #7300ff;
+}
+
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.title {
+  overflow: hidden;
+  color: black;
+  padding: 10px 0px;
+ 
+ width:50%;
+ margin: auto;
+ text-align: center;
+  background-image: url(https://media.giphy.com/media/NQgC6SCAmipUY/giphy.gif);
+  border-radius: 10px;
+
+}
+
+.title_in {
+  width:50%;
+  margin:auto;
+  text-align: center;
+  background-color: rgba(255,255,255,0.35);
+  border-radius: 4px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.assignments{
+  width: 100%;
+  text-align:left;
+  display:inline-block;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.gradient{
+  height:18px;
+  width:100%; 
+  margin-top: 20px;
+}
+
+.all_assignments{
+  justify-content: space-between;
+  padding:3%;
+  align-content: center;
+  height:auto;
+  display: inline;
+  font-family: 'Varela Round', sans-serif;
+
+
+}
+
+.assignment1{
+  padding:3%;
+  border: 4px solid #1E90FF;
+  text-align:left;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.due_date1{
+  float:right;
+  border: 1px solid purple;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: 'Varela Round', sans-serif;
+
+  
+}
+.due_date11{
+  float:right;
+  border: 1px solid purple;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: 'Varela Round', sans-serif;
+
+  
+}
+.weight1{
+  float:right;
+  border: 1px solid purple;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 65% 0% 0% 0%;
+  color:white; 
+  background-color:#7300ff;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/*CSS for footer*/
+.footer {
+  text-align: center;
+  flex-shrink: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}

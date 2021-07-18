@@ -1,0 +1,83 @@
+.body{
+   font-family: 'Varela Round', sans- serif;
+}
+button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 10px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+.header {
+  overflow: hidden;
+  width: 20px 30px;
+  margin: auto;
+  padding: 5px 5px;
+  border-radius: 4px;
+ background-color: dodgerblue;
+}
+
+.header a {
+  font-family: 'Varela Round', sans- serif;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+   background-color: dodgerblue;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: #7300ff;
+}
+
+
+
+.header-right {
+  float: right;
+}
+
+.textin {
+  font-family: 'Varela Round', sans- serif;
+  margin: 0 auto;
+
+  padding: 20px 0px;
+  text-align: center;
+ 
+}
+
+.img {
+  text-align: center;
+  margin: auto;
+  height: 200px;
+  width: 50%;
+   padding: 10px 0px;
+   border-radius: 20px;
+  background-image: url(https://media.giphy.com/media/3o7TKnDj246TbQOcYU/giphy.gif);
+}
+
+.imgcontainer{
+  margin-top: 20px;
+}
+.click {
+   margin: auto;
+  
+  width: 50%;
+  text-align: center;
+}
+
+
+
+

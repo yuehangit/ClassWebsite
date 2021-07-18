@@ -1,0 +1,99 @@
+body {
+  padding-top: 0px;
+ min-width: 700px;
+  font-family: 'Varela Round', sans-serif;
+  background: white;
+  height: 100%;
+
+}
+form {
+  border: 3px solid #f1f1f1;
+  padding: 30px;
+  width: 50%;
+
+  margin: auto;
+  background-color: rgba(255, 255,255, 0.75);
+  border-radius: 10px;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: grey;
+
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+   padding: 10px 0px;
+   border-radius: 20px;
+  background-image: url(https://media.giphy.com/media/NQgC6SCAmipUY/giphy.gif);
+}
+
+/* Avatar image */
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 30px 0px;
+  margin: auto;
+  width:50%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
